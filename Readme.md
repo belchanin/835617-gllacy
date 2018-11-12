@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Анастасия Беликова](https://up.htmlacademy.ru/htmlcss/23/user/835617).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Кошара].(https://htmlacademy.ru/profile/rednaxxxela)
 
 ---
 
