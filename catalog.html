@@ -116,26 +116,69 @@
       </ul>
       <h1>Сливочное мороженое</h1>
       <section class="filter">
-        <p>Сортировка:</p>
-        <!-- Выбор элемента -->
-        <p>Цена: 100 руб. – 500 руб.</p>
-        <!-- Установка цены -->
-        <p>Жирность:</p>
-        <ul class="percent-list">
-          <li class="percent-item">0%</li>
-          <li class="percent-item">до 10%</li>
-          <li class="percent-item">до 30%</li>
-          <li class="percent-item">выше 30%</li>
-        </ul>
-        <p>Наполнители:</p>
-        <ul class="filler-list">
-          <li class="filler-item">шоколадные</li>
-          <li class="filler-item">сахарные присыпки</li>
-          <li class="filler-item">фрукты</li>
-          <li class="filler-item">сиропы</li>
-          <li class="filler-item">джемы</li>
-        </ul>
-        <a href="#">Применить</a>
+        <h2 class="visually-hidden">Фильтр</h2>
+        <form class="filter-form" method="GET" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Сортировка:</legend>
+            <select name="sorting" id="sorting-filter">
+              <option>по популярности</option>
+              <option>сначала недорогие</option>
+              <option>сначала дорогие</option>
+              <option>по жирности</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <legend>Цена: 100 руб. – 500 руб.</legend>
+            <input type="range" name="price" id="price-filter" min="100" max="500">
+          </fieldset>
+          <fieldset>
+            <legend>Жирность:</legend>
+            <ul class="percent-list">
+              <li class="percent-item">
+                <input type="radio" name="fat-content" value="zero-percent" id="filter-zero-percent">
+                <label for="filter-zero-percent">0%</label>
+              </li>
+              <li class="percent-item">
+                <input type="radio" name="fat-content" value="to-ten-percent" id="filter-to-ten-percent" checked>
+                <label for="filter-to-ten-percent">до 10%</label>
+              </li>
+              <li class="percent-item">
+                <input type="radio" name="fat-content" value="to-thirty-percent" id="filter-to-thirty-percent">
+                <label for="filter-to-thirty-percent">до 30%</label>
+              </li>
+              <li class="percent-item">
+                <input type="radio" name="fat-content" value="more-than-thirty-percent" id="filter-more-than-thirty-percent">  
+                <label for="filter-more-than-thirty-percent">выше 30%</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Наполнители:</legend>
+            <ul class="filler-list">
+              <li class="filler-item">
+                <input type="checkbox" name="chocolate" id="filter-chocolate" checked>  
+                <label for="filter-chocolate">шоколадные</label>
+              </li>
+              <li class="filler-item">
+                <input type="checkbox" name="sugar-powder" id="filter-sugar-powder" checked>  
+                <label for="filter-sugar-powder">сахарные присыпки</label>
+              </li>
+              <li class="filler-item">
+                <input type="checkbox" name="fruit" id="filter-fruit">
+                <label for="filter-fruit">фрукты</label> 
+              </li>
+              <li class="filler-item">
+                <input type="checkbox" name="syrup" id="filter-syrup">
+                <label for="filter-syrup">сиропы</label>
+              </li>
+              <li class="filler-item">
+                <input type="checkbox" name="jam" id="filter-jam">
+                <label for="filter-jam">джемы</label>
+              </li>
+            </ul> 
+          </fieldset>
+          <button type="submit" class="button">Применить</button>
+        </form>
       </section>
       <ul class="catalog-list">
         <li class="catalog-item">
