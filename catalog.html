@@ -129,26 +129,34 @@
           </fieldset>
           <fieldset>
             <legend>Цена: 100 руб. – 500 руб.</legend>
-            <input type="range" name="price" id="price-filter" min="100" max="500">
+            <input type="text" name="price" id="price-filter">
           </fieldset>
           <fieldset>
             <legend>Жирность:</legend>
             <ul class="percent-list">
               <li class="percent-item">
-                <input type="radio" name="fat-content" value="zero-percent" id="filter-zero-percent">
-                <label for="filter-zero-percent">0%</label>
+                <label>
+                  <input type="radio" name="fat-content" value="zero-percent">
+                  0%
+                </label>
               </li>
               <li class="percent-item">
-                <input type="radio" name="fat-content" value="to-ten-percent" id="filter-to-ten-percent" checked>
-                <label for="filter-to-ten-percent">до 10%</label>
+                <label>
+                  <input type="radio" name="fat-content" value="to-ten-percent" checked>
+                  до 10%
+                </label>
               </li>
               <li class="percent-item">
-                <input type="radio" name="fat-content" value="to-thirty-percent" id="filter-to-thirty-percent">
-                <label for="filter-to-thirty-percent">до 30%</label>
+                <label>
+                  <input type="radio" name="fat-content" value="to-thirty-percent">
+                  до 30%
+                </label>
               </li>
               <li class="percent-item">
-                <input type="radio" name="fat-content" value="more-than-thirty-percent" id="filter-more-than-thirty-percent">  
-                <label for="filter-more-than-thirty-percent">выше 30%</label>
+                <label>
+                  <input type="radio" name="fat-content" value="more-than-thirty-percent">  
+                  выше 30%
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -156,24 +164,34 @@
             <legend>Наполнители:</legend>
             <ul class="filler-list">
               <li class="filler-item">
-                <input type="checkbox" name="chocolate" id="filter-chocolate" checked>  
-                <label for="filter-chocolate">шоколадные</label>
+                <label>
+                  <input type="checkbox" name="chocolate" checked>  
+                  шоколадные
+                </label>
               </li>
               <li class="filler-item">
-                <input type="checkbox" name="sugar-powder" id="filter-sugar-powder" checked>  
-                <label for="filter-sugar-powder">сахарные присыпки</label>
+                <label>
+                  <input type="checkbox" name="sugar-powder" checked>  
+                  сахарные присыпки
+                </label>
               </li>
               <li class="filler-item">
-                <input type="checkbox" name="fruit" id="filter-fruit">
-                <label for="filter-fruit">фрукты</label> 
+                <label>
+                  <input type="checkbox" name="fruit">
+                  фрукты
+                </label> 
               </li>
               <li class="filler-item">
-                <input type="checkbox" name="syrup" id="filter-syrup">
-                <label for="filter-syrup">сиропы</label>
+                <label>
+                  <input type="checkbox" name="syrup">
+                  сиропы
+                </label>
               </li>
               <li class="filler-item">
-                <input type="checkbox" name="jam" id="filter-jam">
-                <label for="filter-jam">джемы</label>
+                <label>
+                  <input type="checkbox" name="jam">
+                  джемы
+                </label>
               </li>
             </ul> 
           </fieldset>
