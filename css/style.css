@@ -1040,6 +1040,16 @@ a:active {
     background-size: 90%;
 }
 
+.percent-item:hover::before,
+.filter-item:hover::before {
+    opacity: 1;
+}
+
+.percent-item:disabled::before,
+.filter-item:disabled::before {
+    opacity: 0.4;
+}
+
 .filter-list {
     margin: 0;
     padding: 0;
@@ -1134,6 +1144,27 @@ fieldset:nth-of-type(2) input {
     width: 210px;
 }
 
+.pagination a {
+    display: block;
+    width: 27px;
+    height: 22px;
+
+    background-color: transparent;
+    
+    border-radius: 50%;
+
+    text-align: center;
+    padding-top: 5px;
+}
+
+.pagination a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+.pagination a:active {
+    background-color: #ffffff;
+}
+
 .pagination li:first-child {
     width: 27px;
     height: 27px;
@@ -1164,14 +1195,13 @@ fieldset:nth-of-type(2) input {
     color: #323232;
 
     width: 27px;
-    height: 23px;
+    height: 22px;
+
+    padding-top: 5px;
 
     border-radius: 50%;
 
     text-align: center;
-
-    padding-top: 4px;
-
 }
 
 .pagination a {
