@@ -35,10 +35,10 @@
           </li>
         </ul>
         <section class="modal modal-search">
-            <form class="search-form" method="GET" action="https://echo.htmlacademy.ru">
-              <label for="search-info" class="visually-hidden">Поиск</label>
-              <input type="search" name="search" placeholder="Что ищем?" id="search-info">
-            </form>
+          <form class="search-form" method="GET" action="https://echo.htmlacademy.ru">
+            <label for="search-info" class="visually-hidden">Поиск</label>
+            <input type="search" name="search" placeholder="Что ищем?" id="search-info">
+          </form>
         </section>
         <ul class="login">
           <li><a class="login-button" href="#">Вход</a></li>
@@ -54,14 +54,16 @@
                 <label class="visually-hidden" for="user-password">Пароль</label>
                 <input class="login-icon-password" type="password" name="password" id="user-password" placeholder="Пароль">
               </p>
-              <button class="button" type="submit">Войти</button>
-              <div class="user-problem">
-                <p>
-                  <a href="#">Забыли пароль?</a>
-                </p>
-                <p>
-                  <a href="#">Новая регистрация</a>
-                </p>
+              <div class="modal-login-wrapper">
+                <button class="button" type="submit">Войти</button>
+                <div class="user-problem">
+                  <p>
+                    <a href="#">Забыли пароль?</a>
+                  </p>
+                  <p>
+                    <a href="#">Новая регистрация</a>
+                  </p>
+                </div>
               </div>
             </form>
         </section>
@@ -72,10 +74,12 @@
           <table class="active-shopping-cart">
             <tr>
               <td>
-                <button class="delete-product" type="button">Удалить</button>
+                <a class="delete-product" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#323232" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"/></svg>
+                </a>
               </td>
               <td>
-                <img src="img/orange-jam-and-citrus-chips.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                <img src="img/orange-jam-and-citrus-chips.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
               </td>
               <td>
                 Пломбир с апельсиновым джемом
@@ -89,10 +93,12 @@
             </tr>
             <tr>
               <td>
-                <button class="delete-product" type="button">Удалить</button>
+                <a class="delete-product" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#323232" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"/></svg>
+                </a>
               </td>
               <td>
-                <img src="img/strawberry-with-white-chocolate-powder.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой 
+                <img src="img/strawberry-with-white-chocolate-powder.png" width="33" height="33" alt="Клубничный пломбир с присыпкой 
                     из белого шоколада">
               </td>
               <td>
@@ -107,7 +113,7 @@
             </tr>
           </table>
           <p>Итого: 750 руб.</p>
-          <a href="#">Оформить заказ</a>
+          <a class="button" href="#">Оформить заказ</a>
         </section>
       </nav>
     </header>

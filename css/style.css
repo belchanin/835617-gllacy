@@ -251,12 +251,38 @@ a:active:not(nav) {
     justify-content: center;
 }
 
+.modal {
+    display: none;
+
+    padding: 20px;
+
+    background-color: #f8f7f4;
+
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+
+    z-index: 2;
+}
+
 .search:hover + .modal-search {
     display: block;
 
     position: absolute;
     top: 60px;
     right: 240px;
+}
+
+.modal-search {
+    width: 341px;
+
+    padding: 20px 15px;
+}
+
+.search-form input[type="search"] {
+    padding: 15px;
+
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .login {
@@ -272,6 +298,52 @@ a:active:not(nav) {
     position: absolute;
     top: 60px;
     right: 135px;
+}
+
+.modal-login {
+    width: 257px;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    border-radius: 5px;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    background-color: #ffffff;
+
+    border: 1px solid #d3d3d2;
+
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+.login-form p {
+    margin: 0;
+}
+
+.modal-login-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-form .button {
+    padding: 13px 25px;
+
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.user-problem a {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+
+    color: #323232;
+
+    text-decoration: underline;
 }
 
 .login-button {
@@ -311,6 +383,58 @@ a:active:not(nav) {
     position: absolute;
     top: 60px;
     right: 10px;
+}
+
+.modal-shopping-cart {
+    width: 510px;
+
+    padding: 20px 15px;
+
+    text-align: right;
+}
+
+.active-shopping-cart {
+    text-align: center;
+
+    border-bottom: 1px solid #cacac7;
+
+    margin-bottom: 16px;
+}
+
+.active-shopping-cart td {
+    color: #323232;
+
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 400;
+
+    padding-bottom: 20px;
+}
+
+.active-shopping-cart span {
+    color: #999999;
+}
+
+.active-shopping-cart td:nth-of-type(3) {
+    width: 45%;
+}
+
+.modal-shopping-cart > p {
+    margin: 0;
+
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #323232;
+
+    margin-bottom: 17px;
+}
+
+.modal-shopping-cart .button {
+    font-size: 18px;
+    line-height: 24px;
+    
+    padding: 11px 13px;
 }
 
 .empty-shopping-cart a {
@@ -1568,8 +1692,4 @@ fieldset:nth-of-type(2) input {
 
 .footer-copyright a {
     color: #fefefe;
-}
-
-.modal {
-    display: none;
 }
