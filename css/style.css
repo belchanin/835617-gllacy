@@ -75,7 +75,6 @@ a:active:not(nav) {
     text-decoration: none;
     text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
   
-    background: #f26843;
     background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
     border-radius: 50px;
     box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
@@ -126,8 +125,6 @@ a:active:not(nav) {
 
 .site-navigation,
 .site-navigation-submenu,
-.search,
-.login,
 .shopping-cart {
     list-style: none;
 
@@ -185,6 +182,8 @@ a:active:not(nav) {
     top: 38px;
     left: 3px;
 
+    padding-top: 10px;
+
     width: 143px;
 
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
@@ -194,6 +193,21 @@ a:active:not(nav) {
     border-radius: 5px;
 
     z-index: 2;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu:hover::after {
+    content: "";
+
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+
+    width: 80px;
+    height: 5px;
 }
 
 .site-navigation-submenu a {
@@ -238,6 +252,19 @@ a:active:not(nav) {
     margin-right: 10px;
 
     border-radius: 50%;
+
+    position: relative;
+}
+
+.search:hover::after  {
+    content: "";
+
+    position: absolute;
+    bottom: -15px;
+    left: -50px;
+
+    width: 150px;
+    height: 15px;
 }
 
 .search-button {
@@ -264,12 +291,12 @@ a:active:not(nav) {
     z-index: 2;
 }
 
-.search:hover + .modal-search {
+.search:hover .modal-search {
     display: block;
 
     position: absolute;
-    top: 60px;
-    right: 240px;
+    top: 37px;
+    right: 0;
 }
 
 .modal-search {
@@ -283,6 +310,10 @@ a:active:not(nav) {
 
     width: 100%;
     box-sizing: border-box;
+
+    border: 1px solid #d3d3d2;
+    border-radius: 5px;
+
 }
 
 .login {
@@ -290,14 +321,27 @@ a:active:not(nav) {
     margin-right: 9px;
 
     border-radius: 25px;
+
+    position: relative;
 }
 
-.login:hover + .modal-login {
+.login:hover::after {
+    content: "";
+
+    position: absolute;
+    bottom: -15px;
+    left: -50px;
+
+    width: 150px;
+    height: 15px;
+}
+
+.login:hover .modal-login {
     display: block;
 
     position: absolute;
-    top: 60px;
-    right: 135px;
+    top: 37px;
+    right: 0;
 }
 
 .modal-login {
@@ -383,6 +427,7 @@ a:active:not(nav) {
     position: absolute;
     top: 60px;
     right: 10px;
+    padding-top: 10px;
 }
 
 .modal-shopping-cart {
@@ -821,6 +866,8 @@ a:active:not(nav) {
 
     font-size: 24px;
     line-height: 30px;
+
+    text-decoration: underline;
 }
 
 .mailing-strip {
@@ -913,7 +960,7 @@ a:active:not(nav) {
 
     position: absolute;
     top: -290px;
-    left: 465px;   
+    left: 380px;   
     z-index: 1;
 
     width: 80px;
@@ -928,7 +975,7 @@ a:active:not(nav) {
 
     position: absolute;
     top: -260px;
-    left: 505px;
+    left: 420px;
 
     width: 182px;
     height: 110px;
@@ -1509,7 +1556,7 @@ fieldset:nth-of-type(2) input {
 
     position: absolute;
     top: 62px;
-    right: 225px;
+    right: 140px;
     
     width: 250px;
 
