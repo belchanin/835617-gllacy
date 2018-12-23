@@ -278,6 +278,8 @@ a:active:not(nav) {
     justify-content: center;
 }
 
+
+
 .modal {
     display: none;
 
@@ -289,6 +291,124 @@ a:active:not(nav) {
     border-radius: 5px;
 
     z-index: 2;
+}
+
+.modal-feedback {
+    display: block;
+
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    
+    margin-left: -239px;
+    padding: 20px 24px;
+
+    width: 430px;
+
+    border-radius: 10px;
+}
+
+.modal-feedback p {
+    margin: 0;
+}
+
+.modal-feedback > p {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+
+    color: #323232;
+
+    margin-bottom: 24px;
+} 
+
+.modal-feedback input[type="text"],
+.modal-feedback input[type="email"]
+{
+    width: 235px;
+
+    padding: 16px 15px 12px;
+    margin-bottom: 20px;
+
+    border: 2px solid rgba(178, 178, 178, 0.52);
+    border-radius: 5px;
+
+    color: #999999;
+}
+
+.modal-feedback textarea {
+    width: 398px;
+    height: 155px;
+
+    padding: 13px 15px;
+    margin-bottom: 24px;
+
+    border: 2px solid rgba(178, 178, 178, 0.52);
+    border-radius: 5px;
+
+    color: #999999;
+}
+
+.modal-feedback input[type="text"]:hover,
+.modal-feedback input[type="email"]:hover,
+.modal-feedback textarea:hover {
+    border: 2px solid rgba(154, 154, 154, 0.52);
+}
+
+.modal-feedback input[type="text"]:checked,
+.modal-feedback input[type="email"]:checked,
+.modal-feedback textarea:checked {
+    border: 2px solid rgba(46, 136, 228, 0.52);
+}
+
+.modal-feedback-button {
+    text-align: right;
+}
+
+.modal-feedback .button {
+    padding: 11px 24px;
+
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.modal-feedback .modal-close {
+    width: 18px;
+    height: 18px;
+
+    font-size: 0;
+
+    border: none;
+
+    cursor: pointer;
+
+    position: absolute;
+    top: 18px;
+    right: 17px;
+
+    background-color: #f8f7f4;
+}
+
+.modal-feedback .modal-close::before,
+.modal-feedback .modal-close::after {
+  content: "";
+
+  position: absolute;
+  top: 7px;
+  right: 0;
+
+  width: 19px;
+  height: 3px;
+
+  background-color: #323232;
+}
+
+.modal-feedback .modal-close::before {
+    transform: rotate(45deg);
+}
+  
+ .modal-feedback .modal-close::after {
+    transform: rotate(-45deg);
 }
 
 .search:hover .modal-search {
