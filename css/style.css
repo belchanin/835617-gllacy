@@ -133,8 +133,8 @@ a:active:not(nav) {
 }
 
 .site-navigation {
-    width: 383px;
-    margin-right: 347px;
+    width: 387px;
+    margin-right: 343px;
     padding-left: 13px;
     padding-right: 13px;
     line-height: 18px;
@@ -761,8 +761,7 @@ a:active:not(nav) {
 }
 
 .site-navigation .active {
-    padding: 8px 14px;
-    width: 63px;
+    width: 83px;
 
     background-color: #d07058;
 
